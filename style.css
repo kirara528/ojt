@@ -1,8 +1,14 @@
 .menu {
   display: flex;
   justify-content: flex-end;
+  padding: 40px;
 }
 
+.menu li {
+  margin-right: 20px;
+  font-weight: bold;
+}
+/* ここから */
 
 
 
@@ -22,6 +28,85 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ここまで*/
 footer {
 	height: 150px;
 	background-color: #000;
