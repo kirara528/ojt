@@ -1,3 +1,18 @@
+body {
+  min-width: 1152px;
+}
+
+header {
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 60px;
+  z-index: 10;
+}
+
 .menu {
   display: flex;
   justify-content: flex-end;
@@ -9,36 +24,31 @@
   font-weight: bold;
 }
 /* ここから */
+.top {
+  position: relative;
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.v_pc {
+  margin-bottom: 10px;
+}
+
+.v_t_pc {
+  position: absolute;
+  right: -60px;
+  top: 236px;
+}
+
+.top p {
+  font-size: 24px;
+  margin: 0 0 20px -60px;
+}
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*108まで*/
 
 
 
