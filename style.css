@@ -2,10 +2,17 @@ body {
   min-width: 1152px;
 }
 
+@media screen and (max-width: 768px) {
+  body {
+    min-width: 100%;
+  }
+}
+
 header {
   position: relative;
 }
 
+}
 .logo {
   position: absolute;
   top: 20px;
@@ -23,6 +30,22 @@ header {
   margin-right: 20px;
   font-weight: bold;
 }
+
+@media screen and (max-width: 768px) {
+  header {
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .logo {
+    width: 180px;
+    height: 180px;
+  }
+}  
 /* ここから */
 .top {
   position: relative;
@@ -42,34 +65,11 @@ header {
 
 .top p {
   font-size: 24px;
-  margin: 0 0 20px -60px;
+  margin: 0 0 100px -60px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*109まで！！！！！
+　　スペース消すの忘れない！！！*/
 
 
 
