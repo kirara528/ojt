@@ -122,7 +122,7 @@ footer {
 
 @media screen and (max-width: 768px) {
 	.footer-text {
-		font-size: 24px;
+		font-size: 12px;
 	}
 }
 
@@ -135,7 +135,6 @@ h2 {
 
 @media screen and (max-width: 768px) {
 	h2 {
-		font-size: 60px;
 		margin-bottom: 0;
 	}
 }
@@ -190,6 +189,7 @@ h2 {
 	bottom: 35px;
 	color: #000;
 	text-decoration: none;
+	font-size: 12px;
 }
 
 .more:after {
@@ -212,6 +212,6 @@ h2 {
 	display: block;
 	background-color: #000;
 	height: 2px;
-	width: 95px;
+	width: 72px;
 	transition: .3s ease-in-out;
 }
