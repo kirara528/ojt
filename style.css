@@ -4,7 +4,10 @@ body {
 
 @media screen and (max-width: 768px) {
   body {
-    min-width: 100%;
+    min-width: auto;
+    min-width: initial;
+    width: 100%;
+    overflow-x: hidden; 
   }
 }
 
@@ -12,12 +15,29 @@ header {
   position: relative;
 }
 
+@media screen and (max-width: 768px) {
+  header {
+    display: flex;
+    justify-content: center;
+    height: 260px;
+  }
 }
+
 .logo {
   position: absolute;
   top: 20px;
   left: 60px;
   z-index: 10;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    position: relative;
+    margin: 20px 0;
+    width: 180px;
+    height: 180px;
+    left: 0;
+  }
 }
 
 .menu {
@@ -26,86 +46,90 @@ header {
   padding: 40px;
 }
 
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+
 .menu li {
   margin-right: 20px;
   font-weight: bold;
 }
-
-@media screen and (max-width: 768px) {
-  header {
-    text-align: center;
-    padding: 20px 0;
-  }
-
-  .menu {
-    display: none;
-  }
-
-  .logo {
-    width: 180px;
-    height: 180px;
-  }
-}  
-/* ここから */
+    
 .top {
   position: relative;
   width: 1024px;
   margin: 0 auto;
 }
 
+@media screen and (max-width: 768px) {
+  .top {
+    width: 100%;
+  }
+}
+
 .v_pc {
   margin-bottom: 10px;
 }
 
+.v_sp {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .v_pc {
+    display: none;
+  }
+
+  .v_sp {
+    display: block;
+    margin-bottom: 10px; 
+  }
+}
+
 .v_t_pc {
+  display: block;
   position: absolute;
   right: -60px;
   top: 236px;
 }
 
-.top p {
-  font-size: 24px;
-  margin: 0 0 100px -60px;
+.v_t_sp {
+  display: none;
 }
 
-/*109まで！！！！！
-　　スペース消すの忘れない！！！*/
+@media screen and (max-width: 768px){
+  .v_t_pc {
+    display: none;
+  }
 
+  .v_t_sp {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+}
 
+.top-text {
+  display: flex;
+  font-size: 24px;
+  margin-left: -60px;
+}
 
+@media screen and (max-width: 768px){
+  .top-text {
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    margin-left: 0;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .top-text p:first-child {
+    margin-bottom: 5px;
+  }
+}
 
 footer {
 	height: 150px;
@@ -130,12 +154,13 @@ h2 {
 	font-size: 30px;
 	text-align: center;
 	font-weight: bold;
-	margin-bottom: 50px;
+	margin: 100px 0 50px 0;
 }
 
 @media screen and (max-width: 768px) {
 	h2 {
-		margin-bottom: 0;
+		font-size: 60px;
+		margin:50px 0 0 0;
 	}
 }
 
